@@ -5,7 +5,9 @@ import java.lang.Math;
  * Created by gr236 on 10/9/18.
  */
 public class number {
-
+int max = 100;
+        int min= 0;
+        int range = max - min;
     public String name;
     public double random;
     public static double highestRandom = 0;
@@ -16,7 +18,7 @@ public class number {
     }
     private void rando() {
         if(random == highestRandom) {
-            highestRandom = Math.random();
+            highestRandom =  (int)(Math.sqrt((Math.random() * range) + min));
         }
     }
 }
