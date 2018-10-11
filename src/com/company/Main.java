@@ -1,14 +1,15 @@
 package com.company;
 import java.util.*;
+import java.util.Random;
+import java.lang.Math;
 public class Main {
 
     public static void main(String[] args) {
-        int numStudents = 1;
-        String name[] = new String[numStudents];
-     for (int j=0; j < numStudents; j++) {
-         Scanner kbReader1 = new Scanner(System.in);
+         Scanner kbInput1 = new Scanner(System.in);
          System.out.println("What is your name");
-         name[j] = kbReader1.nextLine();
+         String nombre= kbInput1.next();
+         number n1 = new number(nombre, 0);
+        System.out.println("Nice to meet you " + nombre + "! Your lucky number is " + number.highestRandom);
      }
     }
-}
+
